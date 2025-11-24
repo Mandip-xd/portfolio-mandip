@@ -3,27 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mandip | Student Developer</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
 </head>
-<body>
 
+<body>
+   
     <header>
-        <div class="logo">M.</div>
-        <div class="toggle"></div>
+        <nav>
+            <span id="logo">M.</span>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section class="hero">
-        <h1>Hello,I'm <span class="green">Mandip!</span></h1>
-        <h2>A student developer currently learning <br>
-            & debugging errors <br>
-             at <span class="green">Herald.</span>
-        </h2>
+    
+    <section id="about">
+        <h1>About Me</h1>
+        <p id="intro1">
+            Hello, I'm <span id="glow">Mandip!</span><br>
+        </p>
+        <p>Student Developer currently <br>
+            Learning & Debugging Errors <br>at <span id="glow">Herald</span>
+        </p>
     </section>
 
-    <footer>
-        <p class="email">hello@mandip.dev</p>
-    </footer>
+ 
+    <section id="projects">
+        <h2>Projects</h2>
 
+        <div class="projects-container">
+            <div class="project">
+                <h3>Weather App</h3>
+                <img src="images/weather_app.png" alt="Weather App Screenshot">
+                <p>In my 1st Semester, I created this Weather Website as my Portfolio Assignment.</p>
+            </div>
+
+            <div class="project">
+                <h3>Banking System</h3>
+                <img src="images/banking_app.png" alt="Banking System Screenshot">
+                <p>In my 2nd Semester, I created this Banking System app as my Portfolio Assignment.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    
+    <footer>
+        <p>&copy; 2025 Mandip. All rights reserved.</p>
+    </footer>
 </body>
 </html>
